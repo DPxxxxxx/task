@@ -1,0 +1,35 @@
+.page {
+  height: 100vh;                 /* Full screen height */
+  display: flex;                 /* Enable flexbox */
+  justify-content: center;       /* Center horizontally */
+  align-items: center;           /* Center vertically */
+  background-color: #f4f4f4;     /* Light background */
+}
+
+.login-container {
+  background: white;
+  padding: 30px;
+  width: 300px;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  text-align: center;
+}
+
+input {
+  width: 100%;
+  padding: 8px;
+  margin: 10px 0;
+}
+
+button {
+  width: 100%;
+  padding: 10px;
+  background-color: #1976d2;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #125ea2;
+}
