@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-home',
@@ -8,5 +9,10 @@ import { Component } from '@angular/core';
   styleUrl: './home.css',
 })
 export class Home {
-
+constructor(private router:Router) {}
+logout (){
+  localStorage.removeItem("token");
+  this.router.navigate(['/login']);
 }
+}
+

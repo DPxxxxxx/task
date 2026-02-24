@@ -14,6 +14,7 @@ export class Login {
   constructor(private router: Router) {}
 
   goToHome() {
+    localStorage.setItem('token','loggedInUser');
     this.router.navigate(['/home']);
   }
 
